@@ -1,0 +1,35 @@
+
+@import "tailwindcss";
+
+:root{
+  
+  background: linear-gradient( to bottom ,rgb(255, 250, 108),rgb(123, 181, 238));
+  background-size: 100% 100%; /* Ensure the gradient covers the entire background */
+  background-attachment: fixed;
+  height: 100%;
+
+}
+
+@keyframes customPulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.custom-pulse {
+  animation: customPulse 4s ease-in-out 2; /* Run animation 3 times */
+}
+
+@keyframes customBounce {
+  0%, 100% {
+    transform: translateY(0px); /* Start and end at original position */
+  }
+  50% {
+    transform: translateY(-50px); /* Move up by 20px at the middle of the animation */
+  }
+}
+
+/* Applying custom bounce animation */
+.bounce-custom {
+  animation: customBounce 1s ease-in-out 2; /* Run 3 times, lasts 1 second each time */
+}
