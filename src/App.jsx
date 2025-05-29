@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './tabs/Home'
 import NavBar from './tabs/NavBar'
-import { BrowserRouter as Router, Route,Routes,Link } from 'react-router'
+import { HashRouter as Router, Route,Routes,Link } from 'react-router'
 import Skills from './tabs/Skills'
 import Experience from './tabs/Experience'
 import Contact from './tabs/Contact'
@@ -33,6 +33,7 @@ function App() {
               </Routes>
               </ContextUserProvider>
         </Router>
+        
         
     </>
   )
